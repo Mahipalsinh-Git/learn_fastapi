@@ -40,3 +40,20 @@ Docs:
     http://127.0.0.1:8000/redoc
 
 -------------------------
+    cd ..
+    cd ..
+    clear
+    uv init ch_19
+    cd ch_19 
+    mkdir app
+    cd app     
+    uv add "fastapi[standard]"
+
+from fastapi import FastAPI
+from pydantic import BaseModel
+
+from typing import Annotated
+
+app = FastAPI()
+
+    uvicorn main:app --reload

@@ -1,0 +1,14 @@
+[project]
+name = "ch-16"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi[standard]>=0.116.1",
+]
+
+[tool.uv.workspace]
+members = [
+    "ch_17",
+]
