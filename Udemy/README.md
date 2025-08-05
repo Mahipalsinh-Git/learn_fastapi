@@ -43,8 +43,8 @@ Docs:
     cd ..
     cd ..
     clear
-    uv init ch_19
-    cd ch_19 
+    uv init ch_25
+    cd ch_25
     mkdir app
     cd app     
     uv add "fastapi[standard]"
@@ -56,4 +56,4 @@ from typing import Annotated
 
 app = FastAPI()
 
-    uvicorn main:app --reload
+uvicorn main:app --reload
