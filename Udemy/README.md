@@ -43,8 +43,8 @@ Docs:
     cd ..
     cd ..
     clear
-    uv init ch_29
-    cd ch_29
+    uv init ch_33
+    cd ch_33
     mkdir app
     cd app     
     uv add "fastapi[standard]"
