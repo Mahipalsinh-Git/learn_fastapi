@@ -43,8 +43,8 @@ Docs:
     cd ..
     cd ..
     clear
-    uv init ch_33
-    cd ch_33
+    uv init ch_35_sql_alembic
+    cd ch_35_sql_alembic
     mkdir app
     cd app     
     uv add "fastapi[standard]"
