@@ -1,5 +1,6 @@
 uv run alembic init alembic
 uv run alembic upgrade head
+uv run alembic revision --autogenerate -m "create user table"
 
 # Alembic Commands
 1. alembic init [directory]
@@ -24,3 +25,12 @@ uv run alembic upgrade head
 6. alembic downgrade -1
     This command downgrades (rolls back) your database schema by one migration step from the current revision,
     reverting the most recent migration
+
+7. alembic current
+    Display the current revision(s) applied to the database
+
+8. alembic history
+    Show the list of all migragtion scripts in chronoligical order.
+
+9. alembic list_templates
+    List available migration environment templates for initializing new projects.

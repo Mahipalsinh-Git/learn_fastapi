@@ -43,10 +43,11 @@ Docs:
     cd ..
     cd ..
     clear
-    uv init ch_35_sql_alembic
-    cd ch_35_sql_alembic
+    uv init ch_37_sqlalchemy_async
+    cd ch_37_sqlalchemy_async
     mkdir app
     cd app     
+    uv add "sqlalchemy[asyncio]"
     uv add "fastapi[standard]"
 
 from fastapi import FastAPI
@@ -57,3 +58,5 @@ from typing import Annotated
 app = FastAPI()
 
 uvicorn main:app --reload
+
+uv run alembic init alembic
